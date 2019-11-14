@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Routes from "./Routes"
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello NC Track Club!</h1>
+      <Routes />
     </div>
   );
 }
