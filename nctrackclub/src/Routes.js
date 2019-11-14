@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {Button, Navbar, Nav, Dropdown, NavItem} from 'react-bootstrap';
+import Homepage from './Homepage'
 
 class Routes extends Component {
     render() {
@@ -36,9 +37,12 @@ class Routes extends Component {
                     </Nav>
                     </Navbar.Collapse>
                     </Navbar>
-                    </div>
+                    </div>                    
+                    <Switch>
+                        <Route exact path="/" component={Homepage} />
+                        <Route path="/Homepage" component={Homepage} />
+                    </Switch>
                 </Router>
-                <h1>Hello</h1>
                 <footer className = "footer">
                     <br></br>
                     <Button 
